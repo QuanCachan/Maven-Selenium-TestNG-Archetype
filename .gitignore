@@ -1,0 +1,9 @@
+syntax:glob
+.project
+.classpath
+.checkstyle
+.pmd
+.ruleset
+.target
+.settings
+/target/
