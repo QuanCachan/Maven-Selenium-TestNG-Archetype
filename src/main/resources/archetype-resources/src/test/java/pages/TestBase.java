@@ -5,8 +5,8 @@ package ${groupId}.pages;
 
 import java.util.concurrent.TimeUnit;
 
-import org.junit.AfterClass;
-import org.junit.BeforeClass;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeClass;
 import org.openqa.selenium.WebDriver;
 
 import ${groupId}.util.Browser;
@@ -40,7 +40,7 @@ public class TestBase {
 		webDriver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	}
 
-	@AfterClass
+	@AfterSuite
 	public static void tearDown() {
 		if (webDriver != null) {
 			webDriver.quit();

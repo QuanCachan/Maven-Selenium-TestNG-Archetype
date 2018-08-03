@@ -3,8 +3,9 @@
 #set( $symbol_escape = '\' )
 package ${groupId}.pages;
 
-import org.junit.Assert;
-import org.junit.Test;
+import org.testng.Assert;
+import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
@@ -15,18 +16,16 @@ public class HomePageTest extends TestBase {
 
 	HomePage homepage;
 
+	@Parameters({ "path" })
 	@Test
-	public void testH1Existing() throws InterruptedException {
+	public void testH1Existing(String path) throws InterruptedException {
 
-		//when the website URL is definded in src/main/resources, you can modify it by adding a subPath
-		String path="/decouvrir-squash-ta/contenu-statique/outils-et-fonctionnalites/squash-ta-test-automation" ;
-		
 		webDriver.get(websiteUrl + path);
 		homepage = PageFactory.initElements(webDriver, HomePage.class);
 	
 		WebElement h1Text = homepage.getH1Element();
 		Thread.sleep(3000);
-		Assert.assertEquals("Not the right H1", "Squash TA (Test Automation)", h1Text.getText());;
+		Assert.assertEquals(h1Text.getText(), "Squash TA (Test Automation)", "Not the right H1");;
 	}
 
 
