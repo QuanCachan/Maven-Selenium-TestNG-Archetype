@@ -3,13 +3,13 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>fr.henix.squash</groupId>
-	<artifactId>maven-selenium-junit-archetype</artifactId>
+	<artifactId>maven-selenium-testNG-archetype</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
         <packaging>maven-archetype</packaging>
 
-	<name>Maven-Selenium-Junit-Archetype</name>
-	<description>Archetype for a Maven project intended to develop tests with Selenium WebDriver and JUnit</description>
-	<url>https://github.com/QuanCachan/Maven-Selenium-Junit-Archetype/</url>
+	<name>Maven-Selenium-TestNG-Archetype</name>
+	<description>Archetype for a Maven project intended to develop tests with Selenium WebDriver and TestNG</description>
+	<url>https://github.com/QuanCachan/Maven-Selenium-TestNG-Archetype/</url>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -24,9 +24,9 @@
 	</licenses>
 
 	<scm>
-		<connection>scm:git:git@github.com:QuanCachan/Maven-Selenium-Junit-Archetype.git</connection>
-		<developerConnection>scm:git:git@github.com:QuanCachan/Maven-Selenium-Junit-Archetype.git</developerConnection>
-		<url>https://github.com/QuanCachan/Maven-Selenium-Junit-Archetype/</url>
+		<connection>scm:git:git@github.com:QuanCachan/Maven-Selenium-TestNG-Archetype.git</connection>
+		<developerConnection>scm:git:git@github.com:QuanCachan/Maven-Selenium-TestNG-Archetype.git</developerConnection>
+		<url>https://github.com/QuanCachan/Maven-Selenium-TestNG-Archetype/</url>
 		<tag>HEAD</tag>
 	</scm>
 

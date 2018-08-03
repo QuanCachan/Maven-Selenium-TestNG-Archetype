@@ -1,14 +1,14 @@
-"# Maven-Selenium-Junit-Archetype" 
+"# Maven-Selenium-TestNG-Archetype" 
 
 Introduction
 ============
 
-This archetype generates a Maven project with Selenium WebDriver and Junit Test embedded.
+This archetype generates a Maven project with Selenium WebDriver and TestNG Test embedded.
 
 To install the archetype in your local repo:
 
-	git clone https://github.com/QuanCachan/Maven-Selenium-Junit-Archetype.git
-	cd Maven-Selenium-Junit-Archetype
+	git clone https://github.com/QuanCachan/Maven-Selenium-TestNG-Archetype.git
+	cd Maven-Selenium-TestNG-Archetype
 	mvn install
 
 Now, from the workspace that you want to create your Maven project using this archetype, follow these steps:
@@ -17,11 +17,11 @@ Now, from the workspace that you want to create your Maven project using this ar
 
     Then, type:
 
-        mvn archetype:generate -DarchetypeGroupId=fr.henix.squash -DarchetypeArtifactId=maven-selenium-junit-archetype -DarchetypeVersion=0.0.1-SNAPSHOT -DgroupId=myGroupId -DartifactId=myArtifactId
+        mvn archetype:generate -DarchetypeGroupId=fr.henix.squash -DarchetypeArtifactId=maven-selenium-testNG-archetype -DarchetypeVersion=0.0.1-SNAPSHOT -DgroupId=myGroupId -DartifactId=myArtifactId
     						 
 where *myGroupId* : group id of the project to be created; *myArtifactId* : artifact id of the project to be created
 
-This archetype uses Java bindings for Selenium version 3.12.0 and Junit version 4.12.
+This archetype uses Java bindings for Selenium version 3.12.0 and TestNG version 6.13.1.
 
 Project Structure
 -----------------------------------
@@ -59,9 +59,9 @@ Adding Other Browser Driver to the project
 If you need to use other internet browser for the tests, you should put the proper driver file downloaded from their sites into *src/main/resources/your.group.Id/drivers/<browserName>*.
 Then in the *src/main/java/your.group.Id/webdriver*, in WebDriverFactory Java class, create the corresponding methode *setYouBrowserDriver()* as the *setChromeDriver()* one.
 
-JUnit
+TestNG
 ------
-For more info around JUnit 4, go to https://github.com/junit-team/junit4/wiki.
+For more info around TestNG framework, go to http://testng.org/doc/index.html. If you prefer, you could substitute this framework with JUnit.
 
 
 Page Object pattern
@@ -76,4 +76,4 @@ And don't forget to update your application.properties before testing if your co
 
 Credits
 -------
-The Maven-Selenium-Junit-Archetype project is an open source project licensed under the Apache License 2.0.
+The Maven-Selenium-TestNG-Archetype project is an open source project licensed under the Apache License 2.0.
