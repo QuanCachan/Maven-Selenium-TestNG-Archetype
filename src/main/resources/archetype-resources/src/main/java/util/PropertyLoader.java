@@ -10,7 +10,9 @@ import java.util.Properties;
 
 public class PropertyLoader {
 
-    private static String PROP_FILE ="/"+"org.squashtest.ta".replace(".", "/")+"/application.properties";
+    private static String path = "${groupId}";
+    
+    private static String PROP_FILE ="/"+path.replace(".", "/")+"/application.properties";
  
     public static String loadProperty(String name) {
 
